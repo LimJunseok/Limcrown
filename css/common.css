@@ -1,17 +1,14 @@
 @charset "utf-8";
 
 /*googleips 웹폰트 css 파일 불러오기*/
-@import url('https://fonts.googleapis.com/css?family=Galada|Nanum+Gothic|Nanum+Myeongjo');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
 * {margin:0; padding:0;}
 html{font-size:16px;}
-body{ font-size:16px;
-      color:#6f6f6f;
-      font-family: 'Nanum Gothic', sans-serif }
+body{font-size:16px;
+      color:black;
+      font-family: 'Do Hyeon', sans-serif;
+height: 4000px; }
 ul, ol, li{list-style-type:none}
 img, fieldset{vertical-align: middle}
 hr {clear:both;border:none}
@@ -23,115 +20,26 @@ input, textarea {color:inherit;font-size:inherit;
 button{outline:0}
 .sound_only{display: block;text-indent:-9999999999999999999999999999999999999999999px; height:0;}
 
+.inner{width:1280px; min-width: 1024px;;margin: 0 auto;}
+
+/***************위쪽 네비 및 영문, 사이트맵**********************/
+#header {position: relative;}
+#header .inner img{margin-right:180px; position:absolute; top:30px}
+#header .inner .nav_not > li{
+font-size: 1.125rem; position:absolute;top:55px;}
+#header .inner .nav_not > li:first-child{left:761px;}
+#header .inner .nav_not > li:nth-child(2){left:903px;}
+#header .inner .nav_not > li:nth-child(3){left:1045px;}
+#header .inner .nav_not > li:nth-child(4){left:1187px;}
+#header .inner .nav_not > li:last-child{left:1329px;}
+#header .inner .nav_not > li:nth-child(4){left:1187px;}
 
 
-/*********************메인,서브 화면 공통영역*******************/
-#wrap{width: 100%;min-width: 1024px; overflow: hidden;}
-.inner{min-width:1024px;max-width: 1280px; margin: 0 auto;}
+#header .inner .ri_me{position:absolute; top:55px ; right: 320px;}
+#header .inner .ri_me p{font-size: 0.75rem; margin-right: 43px; margin-top: 3px;} 
+#header .inner .ri_me .map{float: right;width:20px;height: 20px; border: 1px solid red;}
 
-/****사ㅣ트맵****/
-
-#nav_pop{position: fixed;min-width: 1024px; ;width: 100%;height: 100%; overflow: auto;
- background-color: tomato; display: none; z-index: 999999999999999999;}
-#nav_pop .navpop_immer{width: 1200px;margin: 0 auto;}
-#nav_pop #nav_logo{position: relative;margin-top: 40px; margin-bottom: 80px;}
-#nav_pop #nav_logo .nav_close{border:0 none; width: 30px;height: 30px;
- background-color:transparent; margin-top: 13px;}
-
-#nav_pop #nav_logo .nav_close span {width: 22px; height:3px; background-color: black;
-position: absolute; top:4px ; left: 4px;}
-#nav_pop #nav_logo .nav_close .up_close{width: 22px; 
-      height:3px; background-color: black;
-      margin-top: 2px;}
-
-#nav_pop #nav_logo .nav_close .mide_close{width: 22px; 
-      height:3px; background-color: black;
-      margin-top: 10px;}
-
-#nav_pop #nav_logo .nav_close .down_close{width: 22px; 
-      height:3px; background-color: black;
-      margin-top: 18px;}
-
-#nav_pop #nav_logo .nav_close{position: absolute;top:0; right:0 }
-#nav_pop .depth1_1 > li{width:calc(25% - 1px);float: left;margin-bottom: 70px;}
-#nav_pop .depth1_1 > li > a{font-size: 1.7rem; margin-bottom: 20px; display: block; color:white;font-weight:bolder}
-#nav_pop .depth1_1 ul{}
-#nav_pop .depth2 > li > a {font-size 1.1rem; color: white;}
-
-
-
-
-/******************************/
-
-
-
-#header .inner{position: relative;}
- 
-
-#nav4 .depth1 > li {float:left;padding: 0 20px; }
-#nav4 .depth1 > li > a {display: block;
-             text-align: center;font-size:0.95rem;color:#333;
-             font-weight: bold; line-height: 75px; color:#333;
-            }
-
-#nav4 .depth1 > li > a::after{content: '';height: 3px; background-color: red;
-position: relative; width: 0px; display: block; transition: 0.5s;}
-
-#nav4 .depth1 > li:hover > a::after{width:100% ; border-bottom:3px solid orange;}
-
-#nav4 .depth1{position: static;}   
-#nav4 .nav_box {position:absolute;/*top:calc(2.8rem + 25px);*/top:78px;left:0;width:100%;
-             background-color:rgba(0, 0, 0, 0.5);z-index:96;
-            display: none;
-            padding:10px 0; color:#fff}
-
-#nav4 .depth1 > li:hover .nav_box{display: block;}               
-#nav4 .nav_box .depth2{width:100%;margin:0 auto;
-      position: relative;text-align: center;/*padding-left:100px; 왼쪽 배치*/
-      box-sizing: border-box;}
-
-#nav4 .depth2 > li{display:inline-block;box-sizing: border-box;
-                padding:10px; }      
-
-#nav4 .depth2 > li:after{content:'';display:inline-block;
-      background-color: red; border-radius: 50%; width: 5px; height: 5px;
-      margin-left: 20px; transform: translate(0, -3px);}
-
-#nav4 .depth2 > li:last-child::after{display: none;} 
-
-/*header*/
-#header .top_icon{float: right; width: 215px; 
-      height: 75px;position: relative;}
-#header .top_icon div{width: 45px; height: 45px; margin-top: 12px;float: left; margin-right: 10px;}   
-#header .top_icon img{width: 100%;}
-#header #top_icon1 img{width: 80%;margin-top:5px ;margin-left:5px ;}
-
-#header #top_icon3{width: 45px;  padding-top: 8px; position: relative;
-                  margin-left: 12px;}  
-#header #top_icon3 span {display: block;width: 22px; height:3px; 
-      background-color: #FCB514; margin-bottom: 2px;}
-     
-#header #top_icon3 .up_close{width: 22px; 
-      height:3px; background-color: #FCB514;
-      margin-top: 9px;}  
-#header #top_icon3 .mide_close{width: 22px; 
-      height:3px; background-color:  #FCB514;
-      margin-top: 4px;}
-#header #top_icon3 .down_close{width: 22px; 
-      height:3px; background-color:  #FCB514;
-      margin-top: 4px;}
-
-
-#header #logo{float: left; margin-top:10px;}
-#header #nav4{float: right; width: 925px;}
-
-#header #top_icon > #top_icon3{width: 70px;height: 73px; display: block;}
+#header .inner .main_bauun{position: absolute; top:400px; left:200px; display: block; margin-bottom: 130px;} 
+#header .inner .main_bauun{content: ''; display: block; clear: both;}
       
-/****푸터**/
-#footer{margin-top: 110px; margin-bottom: 100px;}
-#footer .foot_color{background-color: rgb(109, 109, 109); width: 100%; height: 70px;}
-
-#footer .foot_le{float: left;margin-right: 200px;}
-#footer .foot_ri{margin-top: 20px; display: block;}
-#footer .foot_bo{margin-top:20px;clear: both;}
-
+/****맨하단**/

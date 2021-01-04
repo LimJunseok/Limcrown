@@ -1,165 +1,145 @@
-h2{font-size: 1.875rem; display: inline-block;  margin-right: 32px;}
-h3{font-size: 0.937rem; display: inline-block}
-.sec_tet{font-weight:bolder}
-.whirt{color: white;}
-.black{color: black;}
-#top_popup {height: 100%;}
-#top_popup .close{position: absolute;right: 100px;top: 10px;text-indent: -999999999999999px;
-  background: none; border:0; width: 30px; height: 30px;}
-#top_popup .close::before{content: '';display:block;width: 
-   2px;height: 30px;background-color: black; transform: rotate(45deg);position: absolute; top:0;
-   margin-left: 15px;}
-#top_popup .close::after{content: '';display:block;width: 2px;height: 30px;
-   background-color: black; transform: rotate(-45deg) ;position: absolute; top:0;
-   margin-left: 15px;}
-
-/* 일단 슬라이드 */
-#sec1{clear: both; margin-bottom: 50px;}
-#sec1 .slick-slide img{width: 100%;min-width: 1024px;}
-#top_popup img{width: 100%; min-width: 1024px;}
-#sec1 .slick-arrow{position: absolute; top:calc(50% - 24px);
-   width: 48px; height: 48px; 
-   background-color: transparent;
-   background-position: center; 
-   background-repeat: no-repeat;
-   background-size: cover;
-   z-index: 999999999999999;
-   text-indent:-99999999999px;
-   border: none;}
-#sec1 .slick-prev{background-image:url(../images/sfix-ico_03.png);
-   left:50px;}
-   #sec1 .slick-prev:hover{background-image:url(../images/sfix-ico_05.png) ;}
-#sec1 .slick-next{background-image:url(../images/sfix-ico_04.png);
-   right:50px;}
-#sec1 .slick-next:hover{background-image:url(../images/sfix-ico_06.png) ;}
-#sec1 .slick-dots{position: absolute;right:100px;bottom:100px;}
-#sec1 .slick-dots li{display: inline-block;}
-#sec1 .slick-dots li button{text-indent:-9999999999999999999px ;}
-/**************************** 공지사항*************/
-
-#sec2 .inner{position: relative;}
-#sec2 .notice,#sec2 .purp{width: 500px; height: 100px; background-color: rgba(0, 0, 0, 0.5);
-   position: absolute;bottom: 4px; color: white; /*width:calc((100%-50px) /2)*/}
-#sec2 .notice{left:0; bottom: 54px;}
-#sec2 .purp{right:0; bottom: 54px;}
-#sec2 p{margin-top: 20px; margin-left: 20px;}
-#sec2 .sec_hot{margin-right:75px; float: left;;}
-#sec2 .sec_hot:last-child{margin-right:0;}
-
-/**************************** 주요 클리닉*************/
-
-#sec3 .inner > div {margin-right: 35px;width:calc((100% - 70px) / 3);
-   height: 400px; box-sizing: border-box;
-   float: left ;
-   position: relative;}
-#sec3 .inner > div:last-child{margin-right: 0;}
-#sec3::after{content: ''; display: block;clear: both;}
-#sec3 .inner > div a img{width: 100%;}
-#sec3 .inner > div a{display: block; height: 400px; box-sizing: border-box;}
-#sec3 .inner > div a::before{content: '';display: block;
-   position: absolute; left: 0; top: 0;width: 0;height: 0;
-   border: 4px solid transparent;}
-#sec3 .inner > div:hover a:before{width:calc(100% - 8px); height: calc(100% - 8px);
-   border-top-color:  #ccb4c8;border-right-color: #ccb4c8;
-   transition: width 0.4s, height 0.4s 0.4s;}
-
-#sec3 .inner > div a::after{content: '';display: block;
-   position: absolute; right: 0px; bottom: 0;width: 0;height: 0;
-   border: 4px solid transparent;}
-#sec3 .inner > div:hover a:after{ width:calc(100% - 8px); height: calc(100% - 8px);
-   border-bottom-color:  #ccb4c8;border-left-color:  #ccb4c8;
-   transition: width 0.4s, height 0.4s 0.4s;}
+/* 메인 슬라이드 (들어오면 바로 보이는 화면 */
 
 
-/*그림을 좌우로 짜를 떄 하는 경우
-#sec3 img{width:400px{} 고정사이즈를 준뒤
-position: relative를 추가로 작성후 left:calc(50% -200px) 200px는 400px의 반정도*/
-#sec3{margin-bottom:110px ;}
-/*
-#sec3 img{width:400px{left:cal ;} ;}
-#sec3 .clinic_txt{display: none;}
-#sec3 .inner > div button{transition: 0.5s;}
-#sec3 .inner > div:hover button{background-color: red;}
-#sec3 .inner > div:hover .clinic_txt{display: block;}
-#sec3 .inner > div:hover .clinic_img{display: none;}
-
-/********우리 스타 시술 을 소 개******/
-
-#sec4{margin-bottom:110px; margin-top:50px;}
-#sec4 h2,h3{margin-bottom: 30px;}
-#sec4 .inner .shot_box{margin-right: 35px;
-   height: 320px; width: 32.5%; overflow: hidden;
-   box-sizing: border-box;
-   border:1px solid #e6e6e6; float: left;
-  /* position: relative;*/}
-#sec4 .inner .shot_box img{ width:415px; position: relative; left: calc(50% - 207px);
-   transition: opacity 0.6s}
-#sec4 .inner .shot_box img:hover{
-   cursor:pointer;
-   opacity: 0.5;}
-#sec4 .inner .long_box{margin-right: 0;
-   height: 320px; width:calc(67.5% - 35px);
-   box-sizing: border-box;
-   border:1px solid #e6e6e6; float: right ; overflow: hidden;
-  }
-  #sec4 .inner .long_box img{width:840px ;position: relative; left: calc(50% - 415px);}
+/***********************************/
 
 
 
-/***********시술******************/
-#sec5{margin-top: 110px; margin-bottom: 110px;}
-#sec5 h2{display: inline-block;margin-top:50px ;}
-#sec5 h3{display: block; margin-top:10px; margin-bottom:125px ;}
-#sec5 .sec5_title{width: 400px;float: left; margin-right:35px;} 
-#sec5 .sec5_cont{width:calc(100% - 435px); float: left;}
-#sec5 .sec5_title img{width: 100%;}
-#sec5 .regular1{width: 1200px; margin-right:20px;}
-#sec5 .sec5_img{width:400px; height:525px ;}
 
-#sec5 img{height: 260px; width: 370px;}
-#sec5 img
+/*************************************/
+
+#thumb_slide .slide_titbox{box-sizing:border-box;
+   width:100%; height: 170px; margin-top: 130px;
+   text-align: center}
+
+#thumb_slide .slide_titbox .slide_ti_box1{margin-bottom: 10px;}
+#thumb_slide .slide_titbox .slide_ti_box2{font-size:1.9rem;margin-bottom: 50px;}
+#thumb_slide .slide_titbox .slide_ti_box3{color:#ccc; 
+left:0 ;font-size:0.7rem;margin-bottom:5px;}
+#thumb_slide .slide_titbox .slide_ti_box3::before{ content:'';
+display: inline-block; width: 15px;height: 15px; position: relative; top:4px; right:4px ;
+/*position: absolute;*/
+background:url(../image/icon_set1.png) no-repeat;
+background-position:-38px -138px;}
+#thumb_slide .slide_titbox .slide_ti_box4{color:#ccc; font-size:0.7rem;margin-bottom:120px;}
+#thumb_slide .slide_titbox a{}
 
 
-#sec5 .slick-slide img{width: calc((100% - 20px) / 4) ;min-width: 1024px; ;}
-#sec5 .slick-arrow{position: absolute; top:0;
-   width: 48px; height: 48px; 
-   background-color: transparent;
-   background-position: center; 
-   background-repeat: no-repeat;
-   background-size: cover;
-   z-index: 999999999999999;
-   text-indent:-99999999999px;
-   border: none;}
-#sec5 .slick-prev{background-image:url(../images/sfix-ico_03.png);
-   left:0; top:-90px}
-#sec5 .slick-prev:hover{background-image:url(../images/sfix-ico_05.png) ;}
-#sec5 .slick-next{background-image:url(../images/sfix-ico_04.png);
-   left:50px; top:-90px}
-#sec5 .slick-next:hover{background-image:url(../images/sfix-ico_06.png) ;}
-#sec5 .slick-dots{position: absolute;right:100px;bottom:100px;}
-#sec5 .slick-dots li{display: inline-block;}
-#sec5 .slick-dots li button{text-indent:-9999999999999999999px ;}
-slick-slide slick-current slick-active
-/*************스토리******************/
-#sec6{margin-top: 110px;margin-bottom: 110px;}
-#sec6 h2{margin-bottom:30px;}
+#thumb_slide .slide2 > div{position: relative;}
+#thumb_slide .slide2_box1::before{content:''; display:block;
+width:0px;height:0px;background-color: #EB7311;
+position: absolute; left:30px; top: -2px;
+transition: 0.5s;}
+#thumb_slide .slide2_box1::after{content:''; display:block;
+ width:0px;height:0px;background-color: #EB7311;
+ position: absolute; right:220px; top: -2px;
+ transition: 0.5s;}
+#thumb_slide .slide2_box1:hover:before{width:55px; height: 3px; left:-1px;top:-2px; z-index:-99999 ;}
+#thumb_slide .slide2_box1:hover::after{width:280px; height: 3px; right:-1px;top:-2px; z-index:-99999}
+#thumb_slide .slide2 > .slide2_box2 > div{position: relative;}
 
-/************** 뉴우스******************/
-#sec7 {margin-bottom:110px;position: relative; margin-top: 110px;}
-#sec7 h2{margin-bottom:30px;}
-#sec7 .news3{text-align: center;}
+#thumb_slide .slide2 > .slide2_box2{position: relative}
+#thumb_slide .slide2_box2::before{content:''; display:block;
+width:0px;height:0px;background-color:  #5189E6;
+position: absolute; left:30px; top: -2px;
+transition: 0.5s;}
+#thumb_slide .slide2_box2::after{content:''; display:block;
+ width:0px;height:0px;background-color: #5189E6;
+ position: absolute; right:280px; top: -2px;
+ transition: 0.5s;}
+#thumb_slide .slide2_box2:hover:before{width:55px; height: 3px; left:-1px;top:-2px; z-index:-99999 ;}
+#thumb_slide .slide2_box2:hover::after{width:280px; height: 3px; right:-1px;top:-2px; z-index:-99999}
+#thumb_slide .slide2 > .slide2_box2 > div{position: relative;}
 
-#sec7 .sec7_news{width: calc((100% - 20px)/5); height: 423px;float: left; margin-right:5px;text-align: center;
- border: 2px solid  #ccb4c8; overflow: hidden; box-sizing: border-box;}
- #sec7 .sec7_news img{width:100% ; transition: opacity 0.6s}
- #sec7 .sec7_news:last-child{margin-right: 0;}
-#sec7 .sec7_news h1{font-size:1.2rem; margin-top:15px;margin-bottom: 25px;}
-#sec7 .sec7_news p{font-size:0.8rem ;}
-#sec7 .sec7_news img:hover{ 
-   cursor:pointer;
-   opacity: 0.5;
-  
-}
+
+
+#thumb_slide .slide2_box2
+
+
+
+#thumb_slide .slide2::after{content:''; display: block; clear: both;}
+#thumb_slide .slide2{box-sizing: border-box;
+   /*padding:50px*/background-color:#F6F6F6  ;
+   width: 100%;float: left; height: 640px;}
+#thumb_slide .slide2 > div{width:calc((100% - 308px) / 3);
+             box-sizing: border-box; 
+             float: left;
+             border: 1px solid #ccc;
+             padding: 30px;
+             position: relative;}
+#thumb_slide .slide2 .slide2_box1{
+margin-right: 20px; text-align: center; height: 360px;}
+
+#thumb_slide .slide2 .silde_icon{width: 50px;height: 50px;
+         margin:auto; margin-bottom: 20px;margin-top: 10px;
+         background:url(../image/icon_set4.png) no-repeat;
+         background-position:-9px -73px;}
+#thumb_slide .slide2 .slide2_box_tit{position: absolute; 
+   top:-10px;left:30px }
+#thumb_slide .slide2 .slide2_box1 .slide2_box_tit b{
+        background-color: #EB7311; position:relative;
+        left:-2px; padding: 4.4px; margin-top:-4.7px ;
+        float:left;}
+#thumb_slide .slide2 .slide2_box1 .slide2_box_tit:before{
+       float: left;content:''; display: inline-block; 
+       width: 15px;height: 28px; margin-top:-4.8px ;
+       background:url(../image/bg_cate.png);
+       background-position:0 0;}
+#thumb_slide .slide2 .slide2_box1 .slide2_box_tit::after{
+          float: right;content:''; display: inline-block; 
+          width: 15px;height: 28px; 
+          margin-top:-4.8px;margin-left:-2px ;
+          background:url(../image/bg_cate.png);
+          background-position:-15px 0;}
+
+#thumb_slide .slide2_box1 .seilde_tit1{color:#ccc; margin-bottom: 5px;}
+#thumb_slide .slide2_box1 .seilde_tit2{margin-bottom: 60px;}
+#thumb_slide .slide2_box1 .seilde_txt1{color:#ccc; margin-bottom: 10px;}
+#thumb_slide .slide2_box1 .seilde_txt2{font-size:1.9rem;margin-bottom: 25px;}
+#thumb_slide .slide2_box1 a{border:1px solid white; color:white; 
+     border-radius: 20px; background-color: #EB7312; font-size:0.9rem;
+     padding:10px; padding-left:65px; padding-right:65px;}
+
+#thumb_slide .slide2 .slide2_box2{ text-align: center;  height: 480px;}
+#thumb_slide .slide2 .silde_icon2{width: 55px;height: 55px;
+margin:auto; margin-bottom: 20px;margin-top: 10px;
+background:url(../image/icon_set4.png) no-repeat;
+background-position:-170px -73px;}
+#thumb_slide .slide2 .slide2_box_tit2{position: absolute; 
+top:-10px;left:30px }
+#thumb_slide .slide2 .slide2_box2 .slide2_box_tit2 b{
+background-color:  #5189E6; position:relative;
+left:-2px; padding: 4.5px; margin-top:-4.7px ;
+float:left;}
+#thumb_slide .slide2 .slide2_box2 .slide2_box_tit2:before{
+float: left;content:''; display: inline-block; 
+width: 15px;height: 28px; margin-top:-4.8px ;
+background:url(../image/bg_cate.png);
+background-position:-59px 0;}
+#thumb_slide .slide2 .slide2_box2 .slide2_box_tit2::after{
+float: right;content:''; display: inline-block; 
+width: 14px;height: 28px; 
+margin-top:-4.8px;margin-left:-2px ;
+background:url(../image/bg_cate.png);
+background-position:-75px 0;}
+#thumb_slide .slide2_box2 .seilde_tit11{color:#ccc; margin-bottom: 5px;}
+#thumb_slide .slide2_box2 .seilde_tit21{margin-bottom: 60px;}
+#thumb_slide .slide2_box2 .seilde_txt11{color:#ccc; margin-bottom: 10px;}
+#thumb_slide .slide2_box2 .seilde_txt21{font-size:1.9rem;margin-bottom: 25px;}
+#thumb_slide .slide2_box2 a{border:1px solid white; color:white; 
+border-radius: 20px; background-color: #5189E6; font-size:0.9rem;
+padding:10px; padding-left:65px; padding-right:65px;}
+#thumb_slide:after{content:''; display: block; clear: both; }
+
+
+/*************/
+
+
+
+
+
+
+/***********************/
 
 
 
