@@ -8,7 +8,8 @@ html{font-size:16px;}
 body{font-size:16px;
       color:black;
       font-family: 'Do Hyeon', sans-serif;
-height: 4000px; }
+height: 4000px; 
+font-weight: 400;}
 ul, ol, li{list-style-type:none}
 img, fieldset{vertical-align: middle}
 hr {clear:both;border:none}
@@ -43,3 +44,9 @@ font-size: 1.125rem; position:absolute;top:55px;}
 #header .inner .main_bauun{content: ''; display: block; clear: both;}
       
 /****맨하단**/
+
+#footer{}
+
+
+
+
