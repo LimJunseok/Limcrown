@@ -7,9 +7,10 @@
 html{font-size:16px;}
 body{font-size:16px;
       color:black;
-      font-family: 'Do Hyeon', sans-serif;
-height: 4000px; 
-font-weight: 400;}
+      font-family: 'Do Hyeon' ;
+
+font-weight: 100;}
+footer{font-size:16px;}
 ul, ol, li{list-style-type:none}
 img, fieldset{vertical-align: middle}
 hr {clear:both;border:none}
@@ -35,7 +36,6 @@ font-size: 1.125rem; position:absolute;top:55px;}
 #header .inner .nav_not > li:last-child{left:1329px;}
 #header .inner .nav_not > li:nth-child(4){left:1187px;}
 
-
 #header .inner .ri_me{position:absolute; top:55px ; right: 320px;}
 #header .inner .ri_me p{font-size: 0.75rem; margin-right: 43px; margin-top: 3px;} 
 #header .inner .ri_me .map{float: right;width:20px;height: 20px; border: 1px solid red;}
@@ -45,8 +45,14 @@ font-size: 1.125rem; position:absolute;top:55px;}
       
 /****맨하단**/
 
-#footer{}
+#footer .back_fo{background-color:#404040; padding-top:15px; padding-bottom: 15px;}
+#footer .back_fo .foot_img{float: right; margin-right: 10px;}
 
+#footer .back_fo::after{content: ''; clear: both; display: block;}
+#footer .foot_we{float: left;}
+#footer .foot_we:first-child{color: white; }
+#footer .foot_we:nth-child(2){color: white; margin-left:100px;}
+#footer .foot_we3{float: left; color: white;margin-left:100px;}
+#footer .foot_up::after{display: block; border-bottom: 1px solid #fff;}
 
-
-
+#footer .foot_do
