@@ -3,6 +3,7 @@
 /*googleips 웹폰트 css 파일 불러오기*/
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
+
 * {margin:0; padding:0;}
 html{font-size:16px;}
 body{font-size:16px;
@@ -20,7 +21,8 @@ input, textarea {color:inherit;font-size:inherit;
        vertical-align: middle}
 button{outline:0}
 .sound_only{display: block;text-indent:-9999999999999999999999999999999999999999999px; height:0;}
-
+.t_f{font-family: 'Poor Story', cursive;
+      font-size:16px;color:black;font-weight: lighter;}
 .inner{width:1280px; min-width: 1024px;;margin: 0 auto;}
 
 /***************위쪽 네비 및 영문, 사이트맵**********************/
@@ -35,13 +37,47 @@ font-size: 1.125rem; position:absolute;top:55px;}
 #header .inner .nav_not > li:last-child{left:1329px;}
 #header .inner .nav_not > li:nth-child(4){left:1187px;}
 
-#header .inner .ri_me{position:absolute; top:55px ; right: 320px;}
-#header .inner .ri_me p{font-size: 0.75rem; margin-right: 43px; margin-top: 3px;} 
-#header .inner .ri_me .map{float: right;width:20px;height: 20px; border: 1px solid red;}
+#header .inner .ri_me{position:absolute; top:42px ; right: 320px;}
+#header .inner .ri_me p{font-size: 0.75rem; margin-right: 70px; margin-top: 17px;} 
+#header .inner .ri_me .map{float: right;width:44px;height: 44px; 
+background-image:url(../images/nav_button.png);
+background-repeat: no-repeat;
+}
 
 #header .inner .main_bauun{position: absolute; top:400px; left:200px; display: block; margin-bottom: 130px;} 
 #header .inner .main_bauun{content: ''; display: block; clear: both;}
       
+/**진짜ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ네비*/
+#nav .nav_all::after{clear: both; content: ''; display: block;}
+#nav .nav_fist_box{box-sizing:border-box;
+      width:100%; height: 170px; margin-top: 130px;
+      text-align: center;
+      border: 1px solid #ccc;}
+#nav .nav_fist_box img{margin-top: 30px;}  
+
+#nav .nav_fist_box .nav_all{box-sizing: border-box;
+      width: 100%;float: left; margin-bottom: 80px;
+      height: 350px;}
+      
+#nav .nav_all > div{width:calc(100% / 5);
+      box-sizing: border-box; 
+      float: left;
+      position: relative;
+      text-align: center;
+      border: 1px solid #ccc;
+      height: 750px;}
+#nav .nav_all .fo_sm{}
+#nav .nav_all .nav_b{font-size:1.25rem; margin-bottom: 5px;}
+#nav .nav_all .nav_icon{width: 40px;height: 40px;
+            margin:auto;
+            background-image:url(../images/snakc.png);
+            background-repeat: no-repeat;
+            text-align: center;}
+
+
+
+
+
 /****맨하단**/
 #footer{position: relative;}
 #footer .back_fo{background-color:#404040; padding-top:15px; padding-bottom: 25px;}
@@ -66,8 +102,12 @@ font-size: 1.125rem; position:absolute;top:55px;}
 
 
 
-
-
+/*****************n퀴게뮨*/
+#quickmenu {
+      width: 60px;
+      position: fixed;
+      top: 100px;
+      right: 150px;}
 
 
 
