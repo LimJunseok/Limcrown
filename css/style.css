@@ -170,6 +170,22 @@ background-position:-75px 0;}
    float:left;}
 
 
+#thumb_slide .slide2 .slide2_box1 .slide2_box_ti > .open{
+   background-color:#E6386D ; border:none;  color:#fff;
+   font-family: 'Poor Story', cursive;}
+/*   
+#thumb_slide .slide2 .slide2_box2 .slide2_box_ti > .open{
+   background-color:#E6386D ; border:none;  color:#fff;
+   font-family: 'Poor Story', cursive;}
+#thumb_slide .slide2 .slide2_box3 .slide2_box_ti > .open{
+   background-color:#E6386D ; border:none;  color:#fff;
+   font-family: 'Poor Story', cursive;}*/
+
+#thumb_slide .slide2 .open:first-child{
+   background-color: rgba( 239, 81, 128, 0.5 );
+   }
+
+
 /*************/
 #sec_event .inner > img{margin-top:90px; margin-bottom:90px;}
 
@@ -255,7 +271,8 @@ float:left;}
 /*****************************************/
 
 #crown_ceo .back_gr{margin-top: 180px; }
-#crown_ceo .back_black{background-color: #6D6D6D; position: relative; margin-top:160px ;}
+#crown_ceo .back_black{background-color: #6D6D6D; position: relative; margin-top:160px;
+z-index: -99999;}
 #crown_ceo .back_black .inner .ceo_mi{height:550px;}
 #crown_ceo .back_black::after{content: '';clear: both;display: block;}
 #crown_ceo .back_black .inner .ceo_mi .head_m{font-size:2.5rem; color:white; padding-top: 55px; margin-bottom: 35px;}
@@ -272,7 +289,7 @@ text-align: center; margin-right:220px;margin-top: 55px; }
     padding-top:100px;padding-bottom: 100px;}
 #crown_news .back_gr .cr_ne{width: 500px;margin-top: 50px;float: left;}
 #crown_news .back_gr .cr_ne .sm_box{width: 495px;padding-bottom: 50px; background-color: #fff;
-margin-left: 120px;}
+margin-left: 80px;}
 
 #crown_news .sm_box{position: relative; }
 #crown_news .cr_ne_bo{
@@ -316,7 +333,8 @@ position: absolute; top:10px}
 #crown_news .sm_box .warp .crown_txt{margin-left:150px;margin-top: 10px; color:#707070}
 
 /****위가 이벤트 이제부터 채용공고****/
-#crown_news .back_gr .cr_ne2{width:500px;margin-top: 50px;float: right;}
+#crown_news .back_gr .cr_ne2{width:500px;margin-top: 50px;float: right;
+margin-right: 80px;}
 #crown_news .back_gr .cr_ne2 .sm_box2{width: 495px;padding-bottom: 50px; background-color: #fff;
 }
 
