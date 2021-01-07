@@ -51,11 +51,17 @@ background-repeat: no-repeat;
 /**진짜ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ네비*/
 #nav{position: relative;}
 
+
 #nav .open{background-color:transparent;opacity: 1;}
 
 #nav{/*position: absolute;top:-50px; left: 310px;*/
 position: fixed;top:-800px; left: 310px;
 z-index:9999999999999999999999999999999999999999;}
+
+#nav .inner{position: absolute;top:-50px; left: 310px;
+z-index:9999999999999999999999999999999999999999;
+opacity: 0;}
+
 #nav .nav_all::after{clear: both; content: ''; display: block;}
 #nav .nav_all{border-radius: 40px;}
 #nav .nav_fist_box{box-sizing:border-box;
@@ -65,7 +71,11 @@ z-index:9999999999999999999999999999999999999999;}
       background-color: #fff;
       border-bottom: none;}
       /*fixed*/
-#nav .nav_fist_box img:first-child{margin-top: 30px; margin-left: 55px;}  
+#nav .nav_fist_box img:first-child{margin-top: 30px; margin-left: 55px;
+      border: 1px solid #ccc;
+      background-color: #fff;}
+ 
+#nav .nav_fist_box img{margin-top: 30px;}  
 #nav .nav_fist_box img:last-child{float: right; margin-top: 40px; margin-right: 16px;}
 #nav .nav_fist_box .nav_all{box-sizing: border-box;
       width: 100%;float: left; margin-bottom: 10px;}
@@ -80,7 +90,11 @@ z-index:9999999999999999999999999999999999999999;}
       border-bottom: none;
       height: 600px;
       background-color: #fff;}
-#nav .nav_all > div:first-child{border-left: none; }
+#nav .nav_all > div:first-child{border-left: none; 
+      height: 650px;
+      background-color: #fff;}
+
+
 
 #nav .nav_all .nav_b{font-size:1.35rem; 
       font-weight: bold; 
@@ -92,7 +106,15 @@ z-index:9999999999999999999999999999999999999999;}
 #nav .nav_all .nav_tw_me{margin-top: 2px;}
 #nav .nav_all .nav_me_haed{font-size:1.18rem; margin-top: 11px;} 
 #nav .nav_all .nav_me_haed2{font-size:1.18rem; margin-top: 6px;} 
-#nav .nav_all .nav_me_main{opacity: 0.5; margin-top: 4px;}
+#nav .nav_all .nav_me_main{opacity: 0.5; margin-top: 4px;
+ padding: 15px;}
+
+
+#nav .nav_all .nav_tw_me{margin-top: 2px;}
+#nav .nav_all .nav_me_haed{font-size:1.18rem; margin-top: 15px;} 
+#nav .nav_all .nav_me_haed2{font-size:1.18rem; margin-top: 8px;} 
+#nav .nav_all .nav_me_main{opacity: 0.5; margin-top: 5px;}
+
 #nav .nav_all .nav_me_main2{opacity: 0.5; margin-top: 2px;}
 #nav .nav_all .nav_me_main:first-child{margin-top: 0;}
 
