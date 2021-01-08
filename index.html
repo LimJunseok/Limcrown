@@ -7,6 +7,9 @@
  <link href="css/style.css" rel="stylesheet" type="text/css">
  <script src="js/jquery-3.1.1.min.js"></script>
  <script src="js/crown_me.js"></script>
+ <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+
+ <link href="css/slick.css" rel="stylesheet" type="text/css">
 
  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
@@ -136,7 +139,6 @@
 </div>
 
 <header id="header">
-  <img src="images/back_room.jpg" alt="뒷배경">  
     <div class="inner">
         <a><img src="images/main_logo.png" alt="위측 로고"></a>
          <ul class="nav_not">
@@ -153,6 +155,25 @@
        </div>    
     </div> 
 </header>
+
+<div id="section_ba">
+<section class="lazy slider" data-sizes="50vw">
+  <div>
+    <img src="images/main_ic.png"  data-srcset="http://placehold.it/650x300?text=1-650w 650w, http://placehold.it/960x300?text=1-960w 960w" data-sizes="100vw">
+  </div>
+  <div>
+    <img src="images/main_ic2.png"  data-srcset="http://placehold.it/650x300?text=2-650w 650w, http://placehold.it/960x300?text=2-960w 960w" data-sizes="100vw">
+  </div>
+  <div>
+    <img src="images/main_ic2.png"  data-srcset="http://placehold.it/650x300?text=3-650w 650w, http://placehold.it/960x300?text=3-960w 960w" data-sizes="100vw">
+  </div>
+  <div>
+    <img src="images/main_ic.png"  data-srcset="http://placehold.it/650x300?text=4-650w 650w, http://placehold.it/960x300?text=4-960w 960w" data-sizes="100vw">
+  </div>
+</section>
+</div>
+
+
 <section id="thumb_slide">
     <div class="inner">
     <div class="slide_titbox">
@@ -202,33 +223,27 @@
   </div> 
    <div class="crown_all">
      <div class="crown_sn">
-      <a href="#"><p class="silde_icon"></p></a>
+      <a href="#"><p class="silde_icon silde_icon_all">
+        <img src="images/snakc.png" alt="스낵">
+      </p></a>
       <a href="#"><p class="seilde_tit11">스낵</p></a>
       </div>
      <div class="crown_ca">
-      <a href="#"><p class="silde_icon2"></p></a>
+      <a href="#"><p class="silde_icon2 silde_icon_all">
+        <img src="images/cake.png" alt="케이크">
+      </p></a>
       <a href="#"><p class="seilde_tit11">케이크</p></a>
      </div>
      <div class="crown_be">
-      <a href="#"><p class="silde_icon3"></p></a>
+      <a href="#"><p class="silde_icon3 silde_icon_all">
+        <img src="images/biscuit.png" alt="비스킷">
+      </p></a>
        <a href="#"><p class="seilde_tit11">비스킷</p></a>
      </div>
      <div class="crowb_ce">
-       <a href="#"><p class="silde_icon4"></p></a>
-
-      <p class="silde_icon"></p>
-      <a href="#"><p class="seilde_tit11">스낵</p></a>
-      </div>
-     <div class="crown_ca">
-      <p class="silde_icon2"></p>
-      <a href="#"><p class="seilde_tit11">케이크</p></a>
-     </div>
-     <div class="crown_be">
-       <p class="silde_icon3"></p>
-       <a href="#"><p class="seilde_tit11">비스킷</p></a>
-     </div>
-     <div class="crowb_ce">
-       <p class="silde_icon4"></p>
+       <a href="#"><p class="silde_icon4 silde_icon_all">
+        <img src="images/choco,candy.png" alt="캔디">
+       </p></a>
        <a href="#"><p class="seilde_tit11">캔디,초콜릿</p></a>
      </div>
   </div>     

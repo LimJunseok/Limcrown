@@ -9,7 +9,7 @@ html{font-size:16px;}
 body{font-size:16px;
       color:black;
       font-family: 'Nanum Gothic', sans-serif;
-      font-weight: lighter;
+      font-weight: lighter;header
      }
 footer{font-size:16px;}
 ul, ol, li{list-style-type:none}
@@ -27,7 +27,7 @@ button{outline:0}
 .inner{width:1280px; min-width: 1024px;;margin: 0 auto;}
 
 /***************위쪽 네비 및 영문, 사이트맵**********************/
-#header{z-index: 999999999999999999999999;} 
+#header{z-index: 999999999999999999999999; } 
 #header .inner img{margin-right:180px; position:absolute; top:30px}
 #header .inner .nav_not > li{
 font-size: 1.125rem; position:absolute;top:55px;}

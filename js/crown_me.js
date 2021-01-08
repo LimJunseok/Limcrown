@@ -69,4 +69,13 @@ $('.slide2_box3').hover(function(){
   $('.slide2_box3').removeClass('open');
  })
  
+
+
+ $(".lazy").slick({
+  lazyLoad: 'ondemand', // ondemand progressive anticipated
+  infinite: true
+});
+
+
+
 })
