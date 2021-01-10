@@ -1,21 +1,21 @@
 /* Slider */
+
 .slick-slider
 {
     position: relative;
-
     display: block;
     box-sizing: border-box;
-
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    margin-left: 340px ;
+    
 }
 
 .slick-list
@@ -116,4 +116,27 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slider .slick-prev {
+    background-image: url(../images/sfix-ico_05.png);
+    left: -150px;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 99999;
+    text-indent: -99999999999px;
+    border: none;
+}
+.slider .slick-next {
+    background-image: url(../images/sfix-ico_06.png);
+    right: 100px;
+  
 }
