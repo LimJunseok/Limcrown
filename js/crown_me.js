@@ -1,7 +1,7 @@
 
 $(function(){
   $(window).scroll(function(){
-    if($(document).scrollTop() >= 550 && $(document).scrollTop() <= $('#footer').offset().top - 950) { $('#quickmenu').fadeIn(200) 
+    if($(document).scrollTop() >= 550 && $(document).scrollTop() <= $('#footer').offset().top - 550) { $('#quickmenu').fadeIn(200) 
     } else {$ ('#quickmenu').fadeOut(500)}
   })
 

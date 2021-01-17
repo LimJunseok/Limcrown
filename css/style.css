@@ -1,6 +1,6 @@
 /* 메인 슬라이드 (들어오면 바로 보이는 화면 */
 #section_ba{background-image: url(../images/back_room.jpg);
-w}
+height: 780px;}
 
 /***********************************/
 
@@ -264,11 +264,10 @@ float:left;}
 #crown_no .crown_all .silde_icon_all{height:100px;padding:30px 0;background-position: center;}
 
 #crown_no .crown_all > div .silde_icon_all img{transition:1.2s}
-#crown_no .crown_all > div:hover .silde_icon_all img{transform: rotate(360deg);}
- 
-#crown_no .crown_all > div:nth-child(2):hover .silde_icon_all img{transform: rotate(720deg);}
-#crown_no .crown_all > div:nth-child(3):hover .silde_icon_all img{transform: rotate(360deg);}
-#crown_no .crown_all > div:last-child:hover .silde_icon_all img{transform: rotate(1080deg);}
+#crown_no .crown_all > div:hover .silde_icon_all img{transform: rotate(180deg);}
+#crown_no .crown_all > div:nth-child(2):hover .silde_icon_all img{transform: rotate(-180deg);}
+#crown_no .crown_all > div:nth-child(3):hover .silde_icon_all img{transform: rotate(160deg);}
+#crown_no .crown_all > div:last-child:hover .silde_icon_all img{transform: rotate(-140deg);}
 
 /*
 #crown_no .crown_all .silde_icon{

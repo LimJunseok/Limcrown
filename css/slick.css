@@ -80,7 +80,7 @@
     float: left;
 
     height: 100%;
-    min-height: 1px;
+    min-height: 1080px;
 }
 [dir='rtl'] .slick-slide
 {
@@ -121,10 +121,11 @@
 .slider .slick-prev {
     background-image: url(../images/sfix-ico_05.png);
     left: -150px;
+   
 }
 .slider .slick-arrow {
     position: absolute;
-    top: calc(50% - 24px);
+    top: 35%;
     width: 48px;
     height: 48px;
     background-color: transparent;
@@ -134,6 +135,7 @@
     z-index: 99999;
     text-indent: -99999999999px;
     border: none;
+    
 }
 .slider .slick-next {
     background-image: url(../images/sfix-ico_06.png);
