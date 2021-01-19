@@ -1,7 +1,7 @@
 
 $(function(){
   $(window).scroll(function(){
-    if($(document).scrollTop() >= 550 && $(document).scrollTop() <= $('#footer').offset().top - 550) { $('#quickmenu').fadeIn(200) 
+    if($(document).scrollTop() >= 550 && $(document).scrollTop() <= $('#footer').offset().top - 800) { $('#quickmenu').fadeIn(200) 
     } else {$ ('#quickmenu').fadeOut(500)}
   })
 
@@ -30,10 +30,14 @@ $(function(){
     }) 
 
     
+
+    
     $('.slide2_box1').hover(function(){
      $('.basr_c').addClass('open');
+     $('.t_f').addClass('open');
     },function(){
      $('.basr_c').removeClass('open');
+     $('.t_f').removeClass('open');
   })
   $('.slide2_box1').hover(function(){
     $('.slide2_box1').addClass('open');
@@ -43,8 +47,10 @@ $(function(){
 
  $('.slide2_box2').hover(function(){
   $('.basr_c2').addClass('open');
+  $('.t_f2').addClass('open');
  },function(){
   $('.basr_c2').removeClass('open');
+  $('.t_f2').removeClass('open');
 })
 $('.slide2_box2').hover(function(){
  $('.slide2_box2').addClass('open');
@@ -54,8 +60,10 @@ $('.slide2_box2').hover(function(){
 
 $('.slide2_box3').hover(function(){
   $('.basr_c3').addClass('open');
+  $('.t_f3').addClass('open');
  },function(){
   $('.basr_c3').removeClass('open');
+  $('.t_f3').removeClass('open');
 })
 $('.slide2_box3').hover(function(){
  $('.slide2_box3').addClass('open');

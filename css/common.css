@@ -141,8 +141,7 @@ z-index:9999999999999999999999999999999999999999;}
 #quickmenu {
       width: 60px;
       position: fixed;
-      top:0 ;right: 0;
-      top: 100px;
+      top: 600px;
       right: 150px;
 display: none;}
 
