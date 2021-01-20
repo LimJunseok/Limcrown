@@ -252,11 +252,11 @@ float:left;}
 #crown_no .crown_sn{position: relative;} 
 #crown_no .crown_all .silde_icon_all{height:100px;padding:30px 0;background-position: center;}
 
-#crown_no .crown_all > div .silde_icon_all img{transition:1.2s}
-#crown_no .crown_all > div:hover .silde_icon_all img{transform: rotate(110deg);}
-#crown_no .crown_all > div:nth-child(2):hover .silde_icon_all img{transform: rotate(-130deg);}
-#crown_no .crown_all > div:nth-child(3):hover .silde_icon_all img{transform: rotate(110deg);}
-#crown_no .crown_all > div:last-child:hover .silde_icon_all img{transform: rotate(-130deg);}
+#crown_no .crown_all > div .silde_icon_all img{transition:0.8s}
+#crown_no .crown_all > div:hover .silde_icon_all img{transform: rotate(30deg);}
+#crown_no .crown_all > div:nth-child(2):hover .silde_icon_all img{transform: rotate(-30deg);}
+#crown_no .crown_all > div:nth-child(3):hover .silde_icon_all img{transform: rotate(30deg);}
+#crown_no .crown_all > div:last-child:hover .silde_icon_all img{transform: rotate(-30deg);}
 
 /*
 #crown_no .crown_all .silde_icon{
